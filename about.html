@@ -39,9 +39,28 @@
 		text-align: center;
 	}
 
-	.col-md-6 img{
+	.faded{
+		opacity: 0.3;
+		z-index: -1;
+
+	}
+
+	.image img{
+		z-index: -1;
 		width: 290px;
 		margin: 0 auto;
+		position: relative;
+
+	}
+
+
+	.image a{
+		display: none;
+		z-index: 1;
+		position: absolute;
+		text-align: center;
+		top: 140px;
+		left: 165px;
 	}
 
 	.col-md-6 p{
@@ -58,7 +77,7 @@
 		text-decoration: none;
 		color: #F0D0AD;
 	}
-
+	
 
 
 	</style>
@@ -100,7 +119,25 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="col-md-6">
-				<a href="http://farrahjulin.com" target="_blank"><img src="./assets/images/farrah.png"></a>
+					<div class="image">
+						<img src="./assets/images/farrah.png"></a>
+						<a href="http://farrahjulin.com" target="_blank">www.farrahjulin.com</a>
+					</div>
+					
+				</div>
+				<div class="col-md-6">
+					<div class="image">
+						<img src="./assets/images/hallie.png">
+						<a href="http://halliekohler.com" target="_blank">www.halliekohler.com</a>
+					</div>
+				</div>
+			</div>  
+		</div>
+	
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-6">
 					<p>Farrah was born and raised in the Metro-Detroit area, and now lives in New York, NY.
 					<br><br>
 					She graduated with a BFA in Professional Photographic Illustration and a minor in Entrepreneurship and a concentration in Women's Gender Studies from Rochester Institute of Technology. 
@@ -108,14 +145,13 @@
 					She currently works as a freelance digital tech, retoucher, and photo assistant. </p>
 				</div>
 				<div class="col-md-6">
-				<a href="http://halliekohler.com" target="_blank"><img src="./assets/images/hallie.png"></a>
 					<p>Hallie also hails from the Mitten state, up north on the shore of Lake Michigan. 
-					<br><br>
-					After graduating from Colgate University, she hopped aboard a renovated school bus to travel the country shooting a web documentary series. A year spent living in a remote north woods cabin kickstarted her freelance career, as well as a small greeting card company she owns and designs for.
-					<br><br>
-					She is currently living in Brooklyn, NY, freelancing photography, videography, illustration, and design, as well as learning how to code (and loving it). </p>
+						<br><br>
+						After graduating from Colgate University, she hopped aboard a renovated school bus to travel the country shooting a web documentary series. A year spent living in a remote north woods cabin kickstarted her freelance career, as well as a small greeting card company she owns and designs for.
+						<br><br>
+						She is currently living in Brooklyn, NY, freelancing photography, videography, illustration, and design, as well as learning how to code (and loving it). </p>
 				</div>
-			</div>  
+			</div>
 		</div>
 	</div>
 	
@@ -158,6 +194,18 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+		    $(".image").click(function() {
+		    	$(this).children("img").toggleClass("faded");
+		    	$(this).children("a").toggle();
+			});
+		});
+
+
+
+	</script>
 </body>
 
 </html>

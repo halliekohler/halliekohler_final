@@ -210,11 +210,6 @@
 }
 
 @media all and (min-width: 360px) and (max-width: 480px) {
-/*	#footer_wrapper .hidden{
-		visibility: visible;
-		width: 200px;
-		margin: 0 auto;
-	}*/
 
 	.space{
 		height: 60px;
@@ -227,7 +222,7 @@
 	#footer_wrapper .middle ul{
 		visibility: hidden;
 		display: none;
-		
+
 	}
 
 	#footer_wrapper .middle img{

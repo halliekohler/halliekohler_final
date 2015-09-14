@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/slider.css">	
+
+
+	</head>
+	<body>
+		<div class="logo_wrapper">
+		<div class="centering">
+			<img src="./assets/images/logo2.png">
+		</div>
+	</div>
+
+	<div id="header_wrapper" data-spy="affix" data-offset-top="300">
+		<nav id="header_nav">
+			<ul>
+				<li> <a href="about.html">About</a></li>
+				<li> <a href="work.html">Portfolio</a></li>
+				<li> <a href="contact.html">Contact</a></li>
+				<li> <a href="http://www.farrahjulin.com/">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="space">
+	</div>
+
+		<div id="slider">
+			<img src="./assets/images/wedding0.jpg" id="image">
+			<img src="./assets/images/wedding1.jpg" id="image">
+			<img src="./assets/images/wedding2.jpg" id="image">
+			<img src="./assets/images/wedding3.jpg" id="image">
+			<img src="./assets/images/wedding4.jpg" id="image">
+			<img src="./assets/images/wedding5.jpg" id="image">
+			<img src="./assets/images/wedding6.jpg" id="image">
+			<img src="./assets/images/wedding7.jpg" id="image">
+			<img src="./assets/images/wedding8.jpg" id="image">
+			<img src="./assets/images/wedding9.jpg" id="image">
+
+			<div class="left_hold"><img onClick="photo(-1)" class="left" src="./assets/images/arrowleft.png"></div>
+			<div class="right_hold"><img onClick="photo(1)" class="right" src="./assets/images/arrowright.png"></div>
+		</div>
+
+		<div id="footer_wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="http://facebook.com/farrahjulin">Facebook</a></li>
+						<li><a href="http://instagram.com/farrahjulin">Instagram</a></li>
+					</ul>				
+				</div>
+				<div class="col-xs-4">
+					<ul>
+						<li>&copy; 2015 Farrah Julin / Hallie Kohler</li>
+						<li>Brooklyn, NY</li>
+						<li>+1 231 499 0368</li>
+						<li>hello@sugarandmint.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="clients.html">Client Prints</a></li>
+						<li><a href="contact.html">Contact</a></li>	
+					</ul>
+				</div>
+				<div class="col-xs-2"></div>
+
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			var imageCount = 0;
+			var total = 12;
+
+			function photo(i) {
+				var image = document.getElementById('image');
+				imageCount = imageCount + i;
+				if(imageCount > total){imageCount = 0;}
+				if(imageCount < 0){imageCount = total;}	
+				image.src = "./assets/images/img"+ imageCount +".jpg";
+			}
+
+		</script>
+	</body>
+</html>
+
+
+
+

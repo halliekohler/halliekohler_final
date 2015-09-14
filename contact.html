@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+	<style>
+		h3{
+			font-family: 'Pathway Gothic One', sans-serif;
+    		font-weight: 300;
+    		font-size: 20px;
+    		letter-spacing: 2px;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.col-sm-6 h5{
+			font-family: 'Open Sans Condensed', sans-serif;
+			padding: 20px 0;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+
+		}
+
+		#contact_info{
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 13px;
+			text-align: center;
+			line-height: 30px;
+			padding-bottom: 60px;
+			padding-top: 20px;
+		}
+
+		.icon{
+			color: #B0B7BC;
+			padding: 0 5px;
+		}
+		
+		.icon:hover{
+			color: #F0D0AD;
+		}
+	
+		.h4{
+			font-family: 'Open Sans Condensed', sans-serif;
+			letter-spacing: 1px;
+			font-size: 13px;
+		}
+
+		.form-control{
+			font-family: 'Open Sans Condensed', sans-serif;
+			letter-spacing: 2px;
+		}
+
+		#form-submit{
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 20px;
+			background-color: #F0D0AD;
+			color: white;
+			border: none;
+		}
+
+		#form-submit:hover{
+			color: ;
+		}
+	@media all and (min-width: 481px) and (max-width: 1024px) {
+		.main{
+			padding: 20px;
+		}
+	}
+	@media all and (max-width: 480px) {
+		.main{
+			padding: 20px;
+		}	
+
+	
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="logo_wrapper">
+		<div class="centering">
+			<img src="./assets/images/logo2.png">
+		</div>
+	</div>
+
+	<div id="header_wrapper" data-spy="affix" data-offset-top="300">
+		<nav id="header_nav">
+			<ul>
+				<li> <a href="about.html">About</a></li>
+				<li> <a href="work.html">Portfolio</a></li>
+				<li> <a href="contact.html">Contact</a></li>
+				<li> <a href="http://www.farrahjulin.com/">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="space">
+	</div>
+	<div class="row main">
+		<div class="col-sm-8 col-sm-offset-2">
+			   <h3>SAY HELLO</h3>
+			   <img src="./assets/images/contact.png" width="100%">
+			<div class ="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h5>Let's get to know each other. 
+					<br>
+					Tell us who you are, and what you want your big day to be. Nail down a few details below and we'll get back to you shortly.</h5>
+				</div>
+			</div>
+			<div class ="row">
+				<div class="col-sm-6 col-sm-offset-3" id="contact_info">
+					<a class="icon" href="http://facebook.com/farrahjulin" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></i></a>
+					<a class="icon" href="http://instagram.com/farrahjulin" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+					<br>
+					write: hello@sugarandmint.com
+ 				</div>
+			</div>
+
+			<form role="form" id="contactForm">
+ 				<div class="row">
+		            <div class="form-group col-sm-6">
+		                <label for="name" class="h4">Name(s) | Required</label>
+		                <input type="text" class="form-control" id="name" required>
+		            </div>
+		            <div class="form-group col-sm-6">
+		                <label for="email" class="h4">Email | Required</label>
+		                <input type="email" class="form-control" id="email" required>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="form-group col-sm-6">
+		                <label class="h4">Telephone</label>
+		                <input type="text" class="form-control">
+		            </div>
+		            <div class="form-group col-sm-6">
+		                <label class="h4">How Important is Photography to You?</label>
+		                <input type="email" class="form-control">
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="form-group col-sm-6">
+		                <label class="h4">Where are You Getting Hitched?</label>
+		                <input type="text" class="form-control">
+		            </div>
+		            <div class="form-group col-sm-6">
+		                <label class="h4">When is it Going Down?</label>
+		                <input type="email" class="form-control">
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="form-group col-sm-6">
+		                <label class="h4">How Did You Find Us?</label>
+		                <input type="text" class="form-control">
+		            </div>
+		            <div class="form-group col-sm-6">
+		                <label class="h4">Photo, Video, or Both?</label>
+		                <input type="email" class="form-control">
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="form-group col-sm-12">
+		                <label class="h4">What Do You Like About Our Work?</label>
+		                <input type="text" class="form-control">
+		            </div>
+		        </div>
+		    	<div class="row">
+		            <div class="form-group col-sm-12">
+		                <label class="h4">Describe the Style of Your Wedding</label>
+		                <input type="text" class="form-control">
+		            </div>
+		        </div>
+		        <div class="form-group">
+		            <label for="message" class="h4"> Anything else?</label>
+		            <textarea id="message" class="form-control" rows="5"></textarea>
+		        </div>
+
+		        <button type="submit" id="form-submit" class="btn btn-block ">Submit</button>
+				
+				<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="space">
+	</div>
+
+		<div id="footer_wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="http://facebook.com/farrahjulin">Facebook</a></li>
+						<li><a href="http://instagram.com/farrahjulin">Instagram</a></li>
+					</ul>				
+				</div>
+				<div class="col-xs-4 middle">
+					<div class="middle-img">
+						<img src="./assets/images/amp.png">
+					</div>
+					<ul>
+						<li>&copy; 2015 Farrah Julin / Hallie Kohler</li>
+						<li>Brooklyn, NY</li>
+						<li>+1 231 499 0368</li>
+						<li>hello@sugarandmint.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="clients.html">Client Prints</a></li>
+						<li><a href="contact.html">Contact</a></li>	
+					</ul>
+				</div>
+				<div class="col-xs-2"></div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

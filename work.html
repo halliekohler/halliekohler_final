@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+
+	<style>
+		.container{
+			width: 1000px;
+		}
+
+		.row{
+			padding: 0 30px;
+		}
+		.col-xs-4{
+			padding: 0 5px;
+			margin: 0;
+		}
+		.post-preview-inner{
+			position: relative;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+
+		.post-preview-image img{
+			z-index: 0;
+			padding: 0;	
+			border-radius: 0;
+			width: 100%;
+		}
+
+		.post-preview-hidden{
+			display: none;
+			position: absolute;
+			text-align: center;
+			top: 10px;
+			left: 10px;
+			background-color: rgba(225, 225, 225, 0.8);
+			width: 283px;
+			height: 182px;
+			z-index: 100;
+		}
+
+		.post-preview-hidden a{		
+			text-decoration: none;
+			font-family:'Open Sans Condensed', sans-serif;
+			font-size: 26px;
+			color: black;
+			position: relative;
+			top: 80px;
+			z-index: 150;
+		}
+
+		.post-preview-hidden-title:hover{
+			text-decoration: none;
+		}
+
+		.title-small{
+			visibility: hidden;
+		}
+
+
+@media all and (min-width: 481px) and (max-width: 1024px) {
+	.container{
+		width: 800px;
+	}
+	
+	.post-preview-hidden{
+		display: none;
+		position: absolute;
+		text-align: center;
+		top: 10px;
+		left: 10px;
+		background-color: rgba(225, 225, 225, 0.8);
+		width: 216px;
+		height: 136px;
+		z-index: 100;
+		}
+
+	.post-preview-hidden a{		
+		text-decoration: none;
+		font-family:'Open Sans Condensed', sans-serif;
+		font-size: 20px;
+		color: black;
+		position: relative;
+		top: 60px;
+		z-index: 150;
+	}
+
+	.post-preview-hidden-title:hover{
+		text-decoration: none;
+	}
+
+}
+
+@media all and (min-width: 360px) and (max-width: 480px) {
+	.container{
+		width: 400px;
+	}
+
+	.post-preview-hidden{
+		top: 13px;
+		left: 13px;
+
+	}
+
+	.title-small{
+		visibility: visible;
+		text-align: center;
+		font-family:'Open Sans Condensed', sans-serif;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 15px;
+	}
+
+	.title-small a{
+		text-decoration: none;
+		color: black;
+	}
+
+}
+	</style>
+</head>
+
+<body>
+	<div class="logo_wrapper">
+		<div class="centering">
+			<img src="./assets/images/logo2.png">
+		</div>
+	</div>
+
+	<div id="header_wrapper" data-spy="affix" data-offset-top="300">
+		<nav id="header_nav">
+			<ul>
+				<li> <a href="about.html">About</a></li>
+				<li> <a href="work.html">Portfolio</a></li>
+				<li> <a href="contact.html">Contact</a></li>
+				<li> <a href="http://www.farrahjulin.com/">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="space">
+	</div>
+
+	<div class="container hidden">
+		<div class="row">
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#"> 
+							<img src="./assets/images/wedding1.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Old Mission Peninsula</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Old Mission Peninsula</a>
+						</div>				
+					</div> 
+				</div>			
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#"> 
+							<img src="./assets/images/wedding2.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Hamilton, New York</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Hamilton, New York</a>
+						</div>					
+					</div> 
+				</div>
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#"> 
+							<img src="./assets/images/wedding3.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Sedona, Arizona</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Sedona, Arizona</a>
+						</div>	
+					</div> 
+				</div>
+			</div>
+
+			<div class="sm-space"></div>
+
+
+			<div class="row">
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding4.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Jay Mountain, Colorado</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Jay Mountain, Colorado</a>
+						</div>	
+					</div> 
+				</div>
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding5.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Sears Pond, New York</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Sears Pond, New York</a>
+						</div>	
+					</div> 
+				</div>
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding6.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Atlanta, Georgia</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Atlanta, Georgia</a>
+						</div>	
+					</div> 
+				</div>
+			</div>
+
+			<div class="sm-space"></div>
+
+			<div class="row">
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding7.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Traverse City, Michigan</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Traverse City, Michigan</a>
+						</div>	
+					</div> 
+				</div>
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding8.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Knoxville, Tennessee</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Knoxville, Tennessee</a>
+						</div>	
+					</div> 
+				</div>
+				<div class="col-xs-4 pictures">
+					<div class="post-preview-inner"> 
+						<a class="post-preview-image" href="#" tabindex="-1"> 
+							<img src="./assets/images/wedding9.png"> 
+						</a>
+						<div class="post-preview-hidden"> 
+							<a class="post-preview-hidden-title" href="#">Independent Lake, Pennsylvania</a>
+						</div>
+						<div class="title-small"> 
+							<a href="#">Independent Lake, Pennsylvania</a>
+						</div>	
+					</div> 
+				</div>
+			</div>
+	</div>
+
+	<div class="space">
+	</div>
+	
+	<div id="footer_wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="http://facebook.com/farrahjulin">Facebook</a></li>
+						<li><a href="http://instagram.com/farrahjulin">Instagram</a></li>
+					</ul>				
+				</div>
+				<div class="col-xs-4 middle">
+					<div class="middle-img">
+						<img src="./assets/images/amp.png">
+					</div>
+					<ul>
+						<li>&copy; 2015 Farrah Julin / Hallie Kohler</li>
+						<li>Brooklyn, NY</li>
+						<li>+1 231 499 0368</li>
+						<li>hello@sugarandmint.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="clients.html">Client Prints</a></li>
+						<li><a href="contact.html">Contact</a></li>	
+					</ul>
+				</div>
+				<div class="col-xs-2"></div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script> 
+	$(document).ready(function () {
+
+		$("div.hidden").fadeIn(1000).removeClass("hidden");
+		$(".post-preview-inner").mouseenter(function() {
+		    $(this).children(".post-preview-hidden").stop();
+		    $(this).children(".post-preview-hidden").fadeOut(0);
+		    $(this).children(".post-preview-hidden").fadeIn();
+		});
+
+		$(".post-preview-inner").mouseleave(function() {
+		    $(this).children(".post-preview-hidden").stop();
+		    $(this).children(".post-preview-hidden").fadeIn(0);
+		    $(this).children(".post-preview-hidden").fadeOut();
+		});
+
+	});
+	
+
+	window.onresize = function() {
+	console.log("resize working");
+
+	var width = $(window).width();
+
+    if (width <= 480) {
+        $(".pictures").addClass("col-xs-12");
+        $(".pictures").removeClass("col-xs-4");
+        $(".sm-space").css("height", "0");
+    };
+    //  else if $(".pictures").hasClass("col-xs-12") && (width > 480) {
+    //     $(".col-xs-12").addClass("col-xs-4");
+    //     $(".col-xs-12").removeClass("col-xs-12");
+    // };
+	}
+//problem: how do I made this un-do when I re-size back out? The above code was returning a unexpected token.
+
+	$(document).ready(checkWidth);
+	
+	function checkWidth() {
+		console.log("check working");
+
+		var width = $(window).width();
+
+	    if (width <= 480) {
+	        $(".pictures").addClass("col-xs-12");
+	        $(".pictures").removeClass("col-xs-4");
+	        $(".sm-space").css("height", "0");
+	    };
+	}
+
+	</script>
+
+	</body>
+
+</html>
